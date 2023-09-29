@@ -9,12 +9,14 @@ import com.mobsol.notesapp.feature_note.domain.usecase.AddNoteUseCase
 import com.mobsol.notesapp.feature_note.domain.usecase.DeleteNoteUseCase
 import com.mobsol.notesapp.feature_note.domain.usecase.GetNotesUseCase
 import com.mobsol.notesapp.feature_note.domain.usecase.NoteUseCases
+import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @InstallIn(SingletonComponent::class)
+@Module
 object AppModule {
 
     @Provides
